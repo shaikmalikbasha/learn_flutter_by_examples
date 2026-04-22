@@ -2,145 +2,147 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(XylophoneApp());
+  // runApp(XylophoneApp1());
+  // runApp(XylophoneApp2());
+  runApp(XylophoneApp3());
 }
 
-// class XylophoneApp extends StatelessWidget {
-//   XylophoneApp({super.key});
+class XylophoneApp1 extends StatelessWidget {
+  XylophoneApp1({super.key});
 
-//   final player = AudioPlayer();
+  final player = AudioPlayer();
 
-//   void playSound(String soundFile) async {
-//     await player.play(AssetSource(soundFile));
-//   }
+  void playSound(String soundFile) async {
+    await player.play(AssetSource(soundFile));
+  }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       title: 'Xylophone',
-//       home: Scaffold(
-//         backgroundColor: Colors.grey[350],
-//         appBar: AppBar(title: const Text('Xylophone'), elevation: 4.0),
-//         body: SafeArea(
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             crossAxisAlignment: CrossAxisAlignment.stretch,
-//             children: [
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.red,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note1.wav');
-//                     },
-//                     child: const SizedBox.shrink(), // no text
-//                   ),
-//                 ),
-//               ),
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Xylophone',
+      home: Scaffold(
+        backgroundColor: Colors.grey[350],
+        appBar: AppBar(title: const Text('Xylophone'), elevation: 4.0),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note1.wav');
+                    },
+                    child: const SizedBox.shrink(), // no text
+                  ),
+                ),
+              ),
 
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.orange,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note2.wav');
-//                     },
-//                     child: const SizedBox.shrink(),
-//                   ),
-//                 ),
-//               ),
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.yellow,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note3.wav');
-//                     },
-//                     child: const SizedBox.shrink(),
-//                   ),
-//                 ),
-//               ),
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.green,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note4.wav');
-//                     },
-//                     child: const SizedBox.shrink(),
-//                   ),
-//                 ),
-//               ),
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.teal,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note5.wav');
-//                     },
-//                     child: const SizedBox.shrink(),
-//                   ),
-//                 ),
-//               ),
-//               Expanded(
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(8.0),
-//                   child: TextButton(
-//                     style: TextButton.styleFrom(
-//                       backgroundColor: Colors.purple,
-//                       shape: const RoundedRectangleBorder(
-//                         borderRadius: BorderRadius.zero,
-//                       ),
-//                     ),
-//                     onPressed: () {
-//                       playSound('note6.wav');
-//                     },
-//                     child: const SizedBox.shrink(),
-//                   ),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.orange,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note2.wav');
+                    },
+                    child: const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.yellow,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note3.wav');
+                    },
+                    child: const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note4.wav');
+                    },
+                    child: const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.teal,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note5.wav');
+                    },
+                    child: const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.purple,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    onPressed: () {
+                      playSound('note6.wav');
+                    },
+                    child: const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
-/// Method - 2; Using the For Loop
-class XylophoneApp extends StatelessWidget {
-  XylophoneApp({super.key});
+/// Method - 2: Using the For Loop
+class XylophoneApp2 extends StatelessWidget {
+  XylophoneApp2({super.key});
   final player = AudioPlayer();
   final List<Map<String, dynamic>> notes = [
     {'color': Colors.red, 'filePath': 'note1.wav'},
@@ -187,6 +189,63 @@ class XylophoneApp extends StatelessWidget {
                     ),
                   ),
                 ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Method - 3: Using the Custom Widget
+class XylophoneApp3 extends StatelessWidget {
+  XylophoneApp3({super.key});
+  final player = AudioPlayer();
+
+  void playSound(String soundFile) async {
+    await player.play(AssetSource(soundFile));
+  }
+
+  Expanded buildKey({required Color color, required String filePath}) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: TextButton(
+          style: TextButton.styleFrom(
+            backgroundColor: color,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.zero,
+            ),
+          ),
+          onPressed: () {
+            playSound(filePath);
+          },
+          child: const SizedBox.shrink(),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Xylophone',
+      home: Scaffold(
+        backgroundColor: Colors.grey[350],
+        appBar: AppBar(title: const Text('Xylophone'), elevation: 4.0),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              buildKey(color: Colors.red, filePath: 'note1.wav'),
+              buildKey(color: Colors.orange, filePath: 'note2.wav'),
+              buildKey(color: Colors.yellow, filePath: 'note3.wav'),
+              buildKey(color: Colors.green, filePath: 'note4.wav'),
+              buildKey(color: Colors.teal, filePath: 'note5.wav'),
+              buildKey(color: Colors.blue, filePath: 'note6.wav'),
+              buildKey(color: Colors.purple, filePath: 'note7.wav'),
             ],
           ),
         ),
