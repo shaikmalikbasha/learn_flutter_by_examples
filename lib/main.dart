@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_by_examples/features/go_router_poc/pages/login.dart';
+// import 'package:learn_flutter_by_examples/features/go_router_poc/pages/login.dart';
+import 'package:learn_flutter_by_examples/features/responsive_app_1/responsive_main.dart';
 // import 'package:learn_flutter_by_examples/features/go_router_poc/go_router_example.dart';
 // void main() => runApp(GoRouterExample());
 
@@ -9,4 +10,8 @@ import 'package:learn_flutter_by_examples/features/go_router_poc/pages/login.dar
 // import 'package:learn_flutter_by_examples/features/school_app_1/index.dart';
 // void main() => runApp(SchoolApp());
 
-void main() => runApp(LoginExampleApp());
+// void main() => runApp(LoginExampleApp());
+
+void main() {
+  runApp(const MyResponsiveApp());
+}
