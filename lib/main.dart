@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/adapters.dart';
+// import 'package:hive_flutter/adapters.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:learn_flutter_by_examples/features/user_crud_app/my_user_app.dart';
+// import 'package:learn_flutter_by_examples/features/appbar_with_tabs/appbar_with_tab.dart';
+import 'package:learn_flutter_by_examples/features/riverpod_from_t/t_app_5.dart';
+// import 'package:learn_flutter_by_examples/features/user_crud_app/my_user_app.dart';
 // import 'package:learn_flutter_by_examples/features/riverpod_poc/riverpod_app.dart';
 // import 'package:learn_flutter_by_examples/features/go_router_poc/pages/login.dart';
 // import 'package:learn_flutter_by_examples/features/responsive_app_1/responsive_main.dart';
@@ -21,9 +23,12 @@ import 'package:learn_flutter_by_examples/features/user_crud_app/my_user_app.dar
 
 // void main() => runApp(ProviderScope(child: MyRiverPodApp()));
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Hive.initFlutter();
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Hive.initFlutter();
 
-  runApp(const ProviderScope(child: MyUserCrudApp()));
-}
+//   runApp(const ProviderScope(child: MyUserCrudApp()));
+// }
+
+// void main() => runApp(ProviderScope(child: MyAppWithTabs()));
+void main() => runApp(ProviderScope(child: MyRiverPodAppFromT()));
